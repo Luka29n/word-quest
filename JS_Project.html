@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>WORLD QUEST</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/config.js" defer></script>
+    <script src="javascript/script.js" defer></script>
+    
+</head>
+<body>
+    <div class="haut_de_page">
+            <h1>WORLD QUEST</h1>
+            <h2>améliore ta vitesse de frape avec WORLD QUEST</h2>
+            <p>1. choisi le mode de jeu et c'est partie<br>2. Appui sur entrée ou appuis sur valider</p>
+    </div>
+    <div class="jeu">
+
+        <div class="Choix">
+            <div class="mot">
+                <label for="Mots" class="mots">MOTS</label>
+                <input type="radio" id="Mots">
+            </div>
+
+            <div class="phrase">
+                <label for="phrase" class="phrase">PHRASE</label>
+                <input type="radio" id="phrase">
+            </div>
+            
+        </div>
+        <div class="ennonce">
+            <h1 id="start">START</h1>
+            <h2>Le mot à écrire est :</h2>
+            <h1 class="affichage">le jeu commence dans</h1>
+            <h1 class="timer">60</h1>
+        </div>
+
+        <div class="reponse">
+            <input type="text" id="InputRep">
+            <span id="validation">valider</span>
+            <h1 id="score">score: <span>0</span></h1>
+        </div>
+
+    </div>
+</body>
+</html>

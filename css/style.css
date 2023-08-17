@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .haut_de_page {
+  height: 25%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .haut_de_page h1 {
+  margin: 2% 0 2% 0;
+  font-size: 300%;
+  color: #3b556d;
+}
+body .haut_de_page h2 {
+  margin: 2% 0 2% 0;
+  text-align: center;
+  font-size: 200%;
+  color: #3b556d;
+}
+body .haut_de_page p {
+  margin: 2% 0 2% 0;
+  color: #3b556d;
+  text-align: center;
+}
+body .jeu {
+  border-radius: 10px 80px;
+  font-size: 200%;
+  width: 30%;
+  height: 70%;
+  background-color: #0b162c;
+}
+body .jeu .Choix {
+  display: flex;
+  justify-content: space-around;
+  height: 15%;
+  width: 100%;
+}
+body .jeu .Choix .mot, body .jeu .Choix .phrase {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+body .jeu .Choix .mot input, body .jeu .Choix .phrase input {
+  margin-left: 5%;
+}
+body .jeu .ennonce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  width: 100%;
+  font-size: 50%;
+}
+body .jeu .ennonce #start {
+  height: 20%;
+  width: 30%;
+  text-align: center;
+  line-height: 150%;
+  background-color: white;
+  color: #0b162c;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .jeu .ennonce h2 {
+  margin: 5% 0 5% 0;
+}
+body .jeu .ennonce .affichage {
+  line-height: 600%;
+  text-align: center;
+  color: #0b162c;
+  background-color: white;
+  height: 50%;
+  width: 95%;
+  border-radius: 30px;
+}
+body .jeu .ennonce .timer {
+  margin-top: 2%;
+  background-color: white;
+  width: 95%;
+  height: 20%;
+  border-radius: 30px;
+  color: #0b162c;
+  text-align: center;
+  line-height: 250%;
+}
+body .jeu .reponse {
+  flex-wrap: wrap;
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  height: 20%;
+  align-items: start;
+}
+body .jeu .reponse input {
+  height: 30%;
+  width: 70%;
+  border-radius: 30px;
+  border-color: none;
+  color: #0b162c;
+  text-align: center;
+  font-size: 80%;
+}
+body .jeu .reponse #validation {
+  line-height: 300%;
+  text-align: center;
+  height: 30%;
+  width: 20%;
+  background-color: white;
+  color: #0b162c;
+  font-size: 50%;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.3s;
+}
+body .jeu .reponse #validation:hover {
+  background-color: #5fc2ba;
+  transition: background-color ease-in-out 0.3s;
+}
+body .jeu .reponse h1 {
+  height: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
