@@ -30,17 +30,17 @@ body .haut_de_page {
 body .haut_de_page h1 {
   margin: 2% 0 2% 0;
   font-size: 300%;
-  color: #3b556d;
+  color: #0b162c;
 }
 body .haut_de_page h2 {
   margin: 2% 0 2% 0;
   text-align: center;
   font-size: 200%;
-  color: #3b556d;
+  color: #0b162c;
 }
 body .haut_de_page p {
   margin: 2% 0 2% 0;
-  color: #3b556d;
+  color: #0b162c;
   text-align: center;
 }
 body .jeu {
@@ -48,7 +48,7 @@ body .jeu {
   font-size: 200%;
   width: 30%;
   height: 70%;
-  background-color: #0b162c;
+  background-color: #24527a;
 }
 body .jeu .Choix {
   display: flex;
@@ -79,7 +79,7 @@ body .jeu .ennonce #start {
   text-align: center;
   line-height: 150%;
   background-color: white;
-  color: #0b162c;
+  color: #24527a;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -89,7 +89,7 @@ body .jeu .ennonce h2 {
 body .jeu .ennonce .affichage {
   line-height: 600%;
   text-align: center;
-  color: #0b162c;
+  color: #24527a;
   background-color: white;
   height: 50%;
   width: 95%;
@@ -101,7 +101,7 @@ body .jeu .ennonce .timer {
   width: 95%;
   height: 20%;
   border-radius: 30px;
-  color: #0b162c;
+  color: #24527a;
   text-align: center;
   line-height: 250%;
 }
@@ -118,7 +118,7 @@ body .jeu .reponse input {
   width: 70%;
   border-radius: 30px;
   border-color: none;
-  color: #0b162c;
+  color: #24527a;
   text-align: center;
   font-size: 80%;
 }
@@ -128,7 +128,7 @@ body .jeu .reponse #validation {
   height: 30%;
   width: 20%;
   background-color: white;
-  color: #0b162c;
+  color: #24527a;
   font-size: 50%;
   border-radius: 30px;
   cursor: pointer;
