@@ -38,7 +38,7 @@ function Jeu(choixUtilisateur) {
             }
             i++
             if(i>=mots.length) {
-                affichage.textContent = "Le jeux est finit"
+                affichage.textContent = "Le jeux est fini"
                 start.textContent = "reload"
                 InputJoueur.disabled = true
                 clearInterval(timing)
