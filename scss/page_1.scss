@@ -22,8 +22,8 @@ body{
     align-items: center;
     flex-direction: column;
     .haut_de_page{
-        height: 25%;
-        width: 30%;
+        height: 275px;
+        width: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -49,8 +49,8 @@ body{
     .jeu{
         border-radius: 10px 80px;
         font-size: 200%;
-        width: 30%;
-        height: 70%;
+        width: 575px;
+        height: 692px;
         background-color: $secondary-color;
         
         .Choix{
@@ -96,6 +96,9 @@ body{
                 height: 50%;
                 width: 95%;
                 border-radius: 30px;
+                white-space: normal;
+                word-wrap: break-word
+                ;
             }
             .timer {
                 margin-top: 2%;

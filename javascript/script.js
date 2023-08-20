@@ -26,7 +26,7 @@ function debutJeuMots() {
     if (debut == 0) {
         clearInterval(TimingDebut)
         clearInterval(timing)
-        time = 60
+        time = 30
         Jeu("mots")
         InputJoueur.focus()
         timing = setInterval(UpdateTimer, 1000)
@@ -39,7 +39,7 @@ function debutJeuPhrases() {
 
     if (debut == 0) {
         clearInterval(TimingDebut)
-        time = 60
+        time = 30
         Jeu("phrases")
         InputJoueur.focus()
         timing = setInterval(UpdateTimer, 1000)

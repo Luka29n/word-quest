@@ -20,8 +20,8 @@ body {
   flex-direction: column;
 }
 body .haut_de_page {
-  height: 25%;
-  width: 30%;
+  height: 275px;
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,8 +46,8 @@ body .haut_de_page p {
 body .jeu {
   border-radius: 10px 80px;
   font-size: 200%;
-  width: 30%;
-  height: 70%;
+  width: 575px;
+  height: 692px;
   background-color: #24527a;
 }
 body .jeu .Choix {
@@ -94,6 +94,8 @@ body .jeu .ennonce .affichage {
   height: 50%;
   width: 95%;
   border-radius: 30px;
+  white-space: normal;
+  word-wrap: break-word;
 }
 body .jeu .ennonce .timer {
   margin-top: 2%;
