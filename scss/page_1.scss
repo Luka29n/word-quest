@@ -1,19 +1,18 @@
-$main-color: white;
-$secondary-color: #24527a;
-$troisieme-couleur: #0b162c;
+$main-color: #e0e0e0;
+$secondary-color: #0b162c;
 $quatrieme-couleur: #5fc2ba;
 
 *{
     margin: 0;
     padding: 0;
-    color: $main-color;
+    color: $secondary-color;
+    font-family: 'Roboto', sans-serif;
 }
 html{
     height: 100%;
     width: 100%;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background-color: $main-color;
     height: 100%;
     width: 100%;
@@ -31,18 +30,18 @@ body{
         h1{
             margin: 2% 0 2% 0;
             font-size: 300%;
-            color: $troisieme-couleur;
+            color: $secondary-color;
         }
         h2{
             
             margin: 2% 0 2% 0;
             text-align: center;
             font-size: 200%;
-            color: $troisieme-couleur;
+            color: $secondary-color;
         }
         p{
             margin: 2% 0 2% 0;
-            color: $troisieme-couleur;
+            color: $secondary-color;
             text-align: center;
         }
     }
@@ -53,6 +52,10 @@ body{
         height: 692px;
         background-color: $secondary-color;
         
+        border-radius: 27px;
+        background: #e0e0e0;
+        box-shadow:  10px 10px 19px #b8b8b8,
+             -10px -10px 19px #ffffff;
         .Choix{
             display: flex;
             justify-content: space-around;
@@ -84,6 +87,7 @@ body{
                 color: $secondary-color;
                 border-radius: 10px;
                 cursor: pointer;
+                
             }
             h2{
                 margin: 5% 0 5% 0;
@@ -92,13 +96,13 @@ body{
                 line-height: 600%;
                 text-align: center;
                 color: $secondary-color;
-                background-color: $main-color;
+                background-color: white;
                 height: 50%;
                 width: 95%;
                 border-radius: 30px;
                 white-space: normal;
-                word-wrap: break-word
-                ;
+                word-wrap: break-word;
+
             }
             .timer {
                 margin-top: 2%;
@@ -128,7 +132,7 @@ body{
                 font-size: 80%;
             }
             #validation{
-                line-height: 300%;
+                line-height: 250%;
                 text-align: center;
                 height: 30%;
                 width: 20%;
@@ -137,16 +141,23 @@ body{
                 font-size: 50%;
                 border-radius: 30px;
                 cursor: pointer;
-                transition: background-color ease-in-out 0.3s;  
+                transition: background-color ease-in-out 0.3s;
+                border-radius: 50px;
+                background: #ffffff;
+                box-shadow:  20px 20px 60px #d9d9d9,
+                -20px -20px 60px #ffffff;
+                
                 
             }
             #validation:hover{
-                background-color: $quatrieme-couleur;
+                background-color: #cacaca;
                 transition: background-color ease-in-out 0.3s;
             
             }
-            h1{
-                height: 50%;
+            #score{
+                height: 20%;
+                font-size: 100%;
+                color: #0b162c;
             }
         }
         
