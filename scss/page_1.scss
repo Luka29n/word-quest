@@ -7,12 +7,15 @@ $quatrieme-couleur: #5fc2ba;
     padding: 0;
     color: $secondary-color;
     font-family: 'Roboto', sans-serif;
+    user-select: none;
+    user-zoom: none;
 }
 html{
     height: 100%;
     width: 100%;
 }
 body{
+    
     background-color: $main-color;
     height: 100%;
     width: 100%;
@@ -20,6 +23,67 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    .modal-global{
+        height: 0;
+        width: 100%;
+        display: fixed;
+        visibility: hidden;
+        transition: visibility 0.4s;
+        .overlay{
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: hsla(0, 0%, 4%, 0.835);
+            backdrop-filter: blur(0px);
+            position: absolute;
+            transition: backdrop-filter 0.4s ease-out;
+        }
+        .contenant{
+                opacity: 0;
+                width: 95%;
+                max-width: 500px;
+                min-width: 300px;
+                padding: 30px;
+                background: #fff;
+                border-radius: 5px;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, calc(-50% - 50px));
+                transition: opacity 0.4s ease-out,
+                transform 0.4s ease-out;
+            .close{
+                background-color: rgb(255, 69, 69);
+                border: none;
+                padding: 10px;
+                top: 5px;
+                right: 5px;
+                position: absolute;
+                border-radius: 5px;
+                cursor: pointer;
+                color: white;
+            }
+            
+            p ,h1{
+                padding: 2% 0 0 2% ;
+            }
+        }
+
+        
+    }
+    .modal-global.active{
+        visibility: visible;
+    }
+    .modal-global.active .overlay{
+        backdrop-filter: blur(10px);
+        transition: backdrop-filter 0.4s ease-out;
+    }
+    .modal-global.active .contenant{
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.4s 0.2s ease-out,
+        transform 0.4s 0.2s ease-out;
+    }
     .haut_de_page{
         height: 275px;
         width: 500px;

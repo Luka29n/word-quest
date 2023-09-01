@@ -13,7 +13,28 @@ let timer = document.querySelector(".timer")
 let time = 30
 let nombre_mots = mots.length
 let nombre_phrases = phrases.length
+let modal = document.querySelector(".modal-global")
+let modal_trigger = document.querySelectorAll(".modal-triger")
+console.log(modal_trigger)
 
+
+
+
+function attachModalListeners() {
+    modal_trigger.forEach(trigger => {
+      trigger.addEventListener('click', toggleModal);
+    });
+}
+
+function toggleModal() {
+    modal.classList.toggle('active');
+}
+
+function error() {
+    modal.classList.toggle('active');
+    attachModalListeners();
+}
+  
 
 function nombreAléatoire(nombre){
     return Math.floor(Math.random() * (nombre))

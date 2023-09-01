@@ -67,7 +67,7 @@ start.addEventListener("click", (event) => {
         TimingDebut = setInterval(debutJeuPhrases,1000)
     }
     else{
-        alert("veuillez choisir un mode de jeu")
+        error()
     }        
 })
 
